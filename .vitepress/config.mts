@@ -9,7 +9,7 @@ export default defineConfig({
   description: "A VitePress Site",
   themeConfig: {
     outlineTitle: '目录',
-    outline: [2,6],
+    outline: [2, 6],
     logo: '/images/wd.png',
     // https://vitepress.dev/reference/default-theme-config
     search: {
@@ -39,7 +39,7 @@ export default defineConfig({
           { text: 'typescript', link: '/api-examples' }
         ]
       },
-      { text: '自动生成侧边栏', link: 'docs/front-end/vue/index.md' }
+      { text: '文章', link: 'docs/front-end/article/数组常用方法总结' }
     ],
 
     // sidebar: [
@@ -58,7 +58,10 @@ export default defineConfig({
     //     ]
     //   }
     // ],
-    sidebar: { "docs/front-end/vue": set_sidebar("docs/front-end/vue") },
+    sidebar: {
+      "docs/front-end/vue": set_sidebar("docs/front-end/vue"),
+      "docs/front-end/article": set_sidebar("docs/front-end/article")
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/99799799' },
