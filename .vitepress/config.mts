@@ -3,7 +3,8 @@ import { set_sidebar } from './utils/auto_sidebar.mjs';	// 改成自己的路径
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  head: [["link", { rel: "icon", href: "/images/wd.png" }]],
+  base: "/my-dosc/",
+  head: [["link", { rel: "icon", href: "/my-dosc/wd.png" }]],
   title: "Bai_0v0的文档",
   description: "A VitePress Site",
   themeConfig: {
