@@ -6,3 +6,4 @@ cache
 .cache
 .temp
 *.local
+/node_modules/element-plus/theme-chalk/*.css
