@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { set_sidebar } from './utils/auto_sidebar.mjs';	// 改成自己的路径
+// import { set_sidebar } from './utils/auto_sidebar.mjs';	// 改成自己的路径
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -32,36 +32,38 @@ export default defineConfig({
       },
     },
     nav: [
-      { text: '家', link: '/' },
+      {
+        text: '导航', link: '/docs/nav/index',
+        activeMatch: '/docs/nav/'
+      },
       {
         text: '前端', items: [
-          { text: 'element-plus', link: '/markdown-examples' },
-          { text: 'typescript', link: '/api-examples' }
+          { text: 'element-plus', link: '/docs/front-end/technology/element-plus.md' },
+          { text: 'typescript', link: '/docs/front-end/technology/typescript.md' }
         ]
       },
-      { text: '文章', link: 'docs/front-end/article/数组常用方法总结' }
+      { text: '文章', link: 'docs/front-end/article/数组常用方法总结' },
+      { text: '旅行地图', link: '/docs/map' },
     ],
 
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   },
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
-    // ],
     sidebar: {
-      "docs/front-end/vue": set_sidebar("docs/front-end/vue"),
-      "docs/front-end/article": set_sidebar("docs/front-end/article")
+      '/docs/front-end/article/': [
+        {
+          text: '随笔',
+          items: [
+            { text: '数组常用方法总结', link: '/docs/front-end/article/数组常用方法总结' },
+            { text: '字符串方法总结', link: '/docs/front-end/article/字符串方法总结' },
+            { text: '数组去重', link: '/docs/front-end/article/数组去重' },
+            { text: '常用工具函数', link: '/docs/front-end/article/常用工具函数' },
+          ],
+        },
+      ],
+
     },
+    // sidebar: {
+    //   "docs/front-end/vue": set_sidebar("docs/front-end/vue"),
+    //   "docs/front-end/article": set_sidebar("docs/front-end/article")
+    // },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/99799799' },
