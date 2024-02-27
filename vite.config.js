@@ -7,6 +7,9 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
+  optimizeDeps: {
+    include: ['element-plus'], // Include Element Plus in optimized dependencies
+  },
   plugins: [
     UnoCSS(),
     vueJsx({
@@ -16,7 +19,18 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()]
     }),
     Components({
-      resolvers: [ElementPlusResolver()]
+      resolvers: [
+        ElementPlusResolver(),
+        {
+          name: 'element-plus-styles',
+          enforce: 'pre',
+          resolve: (name) => {
+            if (name.startsWith('element-plus/theme-chalk')) {
+              return `/path/to/local/element-plus-theme-chalk${name.slice('element-plus'.length)}`;
+            }
+          },
+        },
+      ]
     })
   ],
   resolve: {
