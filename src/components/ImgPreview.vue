@@ -16,7 +16,7 @@
       fit="cover"
     /> -->
     <div v-for="(item, index) in imgList" :key="index" class="w-100% border-rd-8px" style="border: 1px solid #eeeeee;">
-      <img :src="item" alt="" />
+      <img :src="item" alt="" class="img-box" />
     </div>
   </div>
 </template>
@@ -35,5 +35,12 @@ defineProps({
 .flex-colmn {
   display: flex;
   flex-direction: column;
+}
+
+.img-box {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
 </style>
