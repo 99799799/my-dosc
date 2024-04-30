@@ -42,6 +42,7 @@ export default defineConfig({
           { text: 'typescript', link: '/docs/front-end/technology/typescript.md' }
         ]
       },
+      { text: '项目', link: 'docs/my-item/微蜂私域.md' },
       { text: '文章', link: 'docs/front-end/article/数组常用方法总结' },
       { text: '旅行地图', link: '/docs/map' },
     ],
