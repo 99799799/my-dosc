@@ -42,7 +42,7 @@ export default defineConfig({
           { text: 'typescript', link: '/docs/front-end/technology/typescript.md' }
         ]
       },
-      { text: '项目', link: 'docs/my-item/微蜂私域.md' },
+      { text: '项目', link: 'docs/my-item/article/微蜂私域' },
       { text: '文章', link: 'docs/front-end/article/数组常用方法总结' },
       { text: '旅行地图', link: '/docs/map' },
     ],
@@ -59,7 +59,17 @@ export default defineConfig({
           ],
         },
       ],
-
+      '/docs/my-item/article/': [
+        {
+          text: '项目',
+          items: [
+            { text: '微蜂私域', link: '/docs/my-item/article/微蜂私域' },
+            { text: '大海有礼', link: '/docs/my-item/article/大海有礼' },
+            { text: '武阔天下', link: '/docs/my-item/article/武阔天下' },
+            { text: '七七三好服', link: '/docs/my-item/article/773好服' },
+          ],
+        }
+      ]
     },
     // sidebar: {
     //   "docs/front-end/vue": set_sidebar("docs/front-end/vue"),
