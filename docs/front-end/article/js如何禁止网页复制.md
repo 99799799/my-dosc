@@ -4,8 +4,8 @@
 
 你可以通过禁止右键菜单来防止用户使用右键复制内容。
 
-```
-javascript复制代码document.addEventListener('contextmenu', function(event) {
+```js
+document.addEventListener('contextmenu', function(event) {
   event.preventDefault();
 });
 ```
@@ -14,16 +14,19 @@ javascript复制代码document.addEventListener('contextmenu', function(event) {
 
 你可以通过设置 CSS 样式来禁用文本选择，这样用户就不能轻易地选择和复制文本。
 
-```
-css复制代码body {
+
+css复制代码
+```css
+body {
   user-select: none;
 }
 ```
 
 在 JavaScript 中，可以通过以下代码禁用文本选择：
 
-```
-javascript复制代码document.addEventListener('mousedown', function(event) {
+javascript复制代码
+```js
+document.addEventListener('mousedown', function(event) {
   event.preventDefault();
 });
 ```
@@ -32,8 +35,9 @@ javascript复制代码document.addEventListener('mousedown', function(event) {
 
 你可以禁用特定的键盘快捷键，例如 `Ctrl+C` 和 `Ctrl+V`，来防止复制和粘贴操作。
 
-```
-javascript复制代码document.addEventListener('keydown', function(event) {
+javascript复制代码
+```js
+document.addEventListener('keydown', function(event) {
   if (event.ctrlKey && (event.key === 'c' || event.key === 'v')) {
     event.preventDefault();
   }
@@ -44,8 +48,8 @@ javascript复制代码document.addEventListener('keydown', function(event) {
 
 另一种方法是使用 `pointer-events` 来禁用对元素的交互，但这可能会影响元素的其他交互功能。
 
-```
-css复制代码.no-copy {
+```css
+.no-copy {
   pointer-events: none;
 }
 ```
@@ -54,8 +58,8 @@ css复制代码.no-copy {
 
 你可以结合以上方法来提高防护效果。
 
-```
-html复制代码<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">

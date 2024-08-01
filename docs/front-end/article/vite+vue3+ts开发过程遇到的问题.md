@@ -173,7 +173,7 @@ if (res.success) {
 
 ```
 
-```
+```js
 if (res.success) {
         const arr: any = await apiUser.getuserinfo(res.data)
         token.value = res.data
@@ -198,13 +198,13 @@ if (res.success) {
 
 身份证号, 支持1/2代(15位/18位数字)
 
-```
+```js
 /(^\d{8}(0\d|10|11|12)([0-2]\d|30|31)\d{3}$)|(^\d{6}(18|19|20)\d{2}(0[1-9]|10|11|12)([0-2]\d|30|31)\d{3}(\d|X|x)$)/
 ```
 
 密码
 
-```
+```js
 /^\S*(?=\S{6,})(?=\S*\d)(?=\S*[A-Z])(?=\S*[a-z])(?=\S*[!@#$%^&*? ])\S*$/
 ```
 
@@ -598,7 +598,7 @@ const handleCustomEvent = (eventData) => {
 
 要查看pnpm的缓存路径，可以执行以下命令：
 
-```javascript
+```bash
 pnpm store path
 ```
 
@@ -606,7 +606,7 @@ pnpm store path
 
 要清除pnpm的缓存，可以执行以下命令：
 
-```javascript
+```bash
 pnpm store prune
 ```
 
@@ -645,7 +645,7 @@ pnpm store prune
 
 创建vite
 
-```
+```bash
 # 使用 npm
 npm create vite@latest
 # 使用 yarn
@@ -656,14 +656,14 @@ pnpm create vite
 
 ## 创建拖拽组件
 
-```
+```bash
 npm install vuedraggable
 
 ```
 
 安装less
 
-```
+```bash
 npm install -g less
 ```
 
@@ -916,7 +916,7 @@ function handleCheck(value: string) {
 
 请求列表接口，对应参数进行额外的请求 渲染el-table
 
-```
+```js
 function getDataList() {
   data.value.loading = true
   const { page, size } = getParams()
@@ -958,7 +958,7 @@ const subMenuCollapseLastStatus = ref(menuSwitch.value === '' ? settingsDefault.
 
 ## 安装vite
 
-```ts
+```bash
 npm init vite@latest
 ```
 
@@ -968,7 +968,7 @@ npm init vite@latest
 
 ## 安装@types/node 扩展指令
 
-```ts
+```bash
 npm i @types/node
 ```
 
@@ -995,7 +995,7 @@ Pinia 是 Vue 的存储库，它允许您跨组件/页面共享状态。
 
 地址：https://pinia.web3doc.top/getting-started.html#%E5%AE%89%E8%A3%85
 
-```ts
+```bash
 npm install pinia
 ```
 
@@ -1066,7 +1066,7 @@ userStore.logout()
 
 ## 安装路由 vue-router
 
-```ts
+```bash
 npm install vue-router -S
 ```
 
@@ -1145,7 +1145,7 @@ export default routes
 
 ## 安装axios
 
-```ts
+```bash
 npm i axios
 ```
 
@@ -1311,7 +1311,7 @@ tsconfig.json
 
 ## 安装vant ui
 
-```
+```bash
 npm i vant
 ```
 
@@ -1357,7 +1357,7 @@ export function setupVant(app: App): void {
 
 ## 可考虑要不要安装postcss-pxtorem插件
 
-```
+```bash
 npm install postcss-pxtorem -D // 用来把px转rem
 npm install amfe-flexible -D // 用来修改根元素字体大小
 
@@ -1365,7 +1365,7 @@ npm install amfe-flexible -D // 用来修改根元素字体大小
 
 main.ts配置
 
-```
+```js
 import 'amfe-flexible'
 ```
 
@@ -1433,7 +1433,7 @@ const startTimeLastYear = dayjs().subtract(1, 'year').startOf('day').format('YYY
 
 ## 安装 file-saver、xlsx 
 
-```ts
+```bash
 npm install --save xlsx file-saver
 ```
 
@@ -1637,8 +1637,8 @@ const extractedData = b.map(item => {
 
 https://juejin.cn/post/7278244755824246821?searchId=2024012215062532E0BAF9AB64EBEAA799
 
-```
-相加
+```ts
+// 相加
 const momey = res.data.reduce((acc: any, obj: any) => acc + obj.totalAmount, 0)
 ```
 

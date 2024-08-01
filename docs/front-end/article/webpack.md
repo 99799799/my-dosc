@@ -2,7 +2,7 @@
 
 ##  初始化package.json
 
-```
+```bash
 npm init -y
 ```
 
@@ -10,7 +10,7 @@ npm init -y
 
 然后可以安装一下
 
-```
+```bash
 npm install jquery -S
 ```
 
@@ -24,7 +24,7 @@ npm install jquery -S
 
 然后开始安装
 
-```
+```bash
 npm i webpack@5.42.1 webpack-cli@4.9.0 -D 
 ```
 
@@ -57,7 +57,7 @@ module.exports = {
 
 安装个插件
 
-```
+```bash
 npm i webpack-dev-server@3.11.2 -D
 ```
 
@@ -73,15 +73,15 @@ npm i webpack-dev-server@3.11.2 -D
 
 我们引用这个 webpack-dev-ser 打包热加载的插件 ，他会在我们内存建立一个引用的
 
-```
+```js
 <script src="/bundle.js"></script>
-而不能直接用
+// 而不能直接用
 <!-- <script src="../dist/bundle.js"></script> -->
 ```
 
 还有一个就是我们调用
 
-```js
+```bash
 npm run dev
 // 执行的时候我们可以看见
 // 生成一个http://localhost:8080/ 的链接地址
@@ -124,7 +124,7 @@ module.exports = {
 
 
 
-```
+```bash
 html-webpack-plugin
 ```
 
@@ -178,7 +178,7 @@ module.exports = {
 
 ### 处理css文件
 
-```
+```bash
 npm i style-loader@3.0.0 css-loader@5.2.6 -D
 ```
 
@@ -199,7 +199,7 @@ npm i style-loader@3.0.0 css-loader@5.2.6 -D
 
 在js文件上
 
-```
+```js
 import "../public/css/index.css";
 ```
 
@@ -209,7 +209,7 @@ import "../public/css/index.css";
 
 ### 处理less文件
 
-```
+```bash
 npm i less-loader@10.0.1 less@4.1.1 -D
 ```
 
@@ -230,7 +230,7 @@ npm i less-loader@10.0.1 less@4.1.1 -D
 
 ### 处理images、url文件
 
-```
+```bash
 npm i url-loader@4.1.1 file-loader@6.2.0 -D 
 ```
 
@@ -282,7 +282,7 @@ import ES6导入语法的时候
 
 ### ![ef5250d472ae52e1d03d279ae7b02fd](C:\Users\64964\AppData\Local\Temp\WeChat Files\ef5250d472ae52e1d03d279ae7b02fd.jpg)
 
-```
+```bash
 npm i babel-loader@8.2.2 @babel/core@7.14.6 @babel/plugin-proposal-decorators@7.14.5 -D
 ```
 
@@ -367,7 +367,7 @@ mode: 'development',
 
 修改 webpack.config.js 中的 **url-loader** 配置项，新增 **outputPath** 选项即可指定图片文件的输出路径
 
-```
+```js
 // 在配置 url-loader 的时候，多个参数之间,使用 & 符号进行分隔
       {
         test:/\.jpg|png|gif$/, use:'url-loader?limit=30410&outputPath=images'
@@ -380,7 +380,7 @@ mode: 'development',
 
 为了在每次打包发布时自动清理掉 dist 目录中的旧文件，可用安装并配置 clean-webpack-plugin 插件
 
-```
+```bash
 // 1. 安装清理 dist 目录的 webpack 插件 不用加版本也行
 npm install clean-webpack-plugin@3.0.0 -D
 
@@ -568,16 +568,16 @@ module.exports = {
 
 ## webpack打包html中img,打包资源成功，图片引用错误，不能显示问题
 
-```
+```bash
 npm i html-withimg-loader -D
 ```
 
-```
+```json
 {
-                test: /\.html$/,
-             //处理html文件中img图片，负责引入img，被url-loaer处理,下载npm i html-withimg-loader -D
-                loader: "html-withimg-loader"
-            }
+  test: /\.html$/,
+  //处理html文件中img图片，负责引入img，被url-loaer处理,下载npm i html-withimg-loader -D
+  loader: "html-withimg-loader"
+}
 
 ```
 

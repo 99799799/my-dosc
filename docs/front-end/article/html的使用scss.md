@@ -4,7 +4,7 @@
 
 1、**安装Sass编译器：** 首先，你需要在你的开发环境中安装Sass编译器。你可以使用npm（如果你使用Node.js）或者其他适合你的包管理器来安装Sass。
 
-```js
+```bash
 npm install -g sass
 
 ```
@@ -34,14 +34,14 @@ nav ul {
 
 3、**编译SCSS文件：** 使用Sass编译器将你的SCSS文件编译成CSS文件。
 
-```js
+```bash
 sass styles.scss styles.css
 ```
 
 4、**在HTML中引入编译后的CSS文件：** 在HTML文件的`<head>`部分中引入编译后的CSS文件。
 
 ```js
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css" />
 ```
 
 
@@ -52,7 +52,7 @@ sass styles.scss styles.css
 2. 切换到你的项目目录。
 3. 运行以下命令启动Sass的watch模式：
 
-```js
+```bash
 sass --watch styles.scss:styles.css
 ```
 

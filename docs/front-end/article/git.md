@@ -36,7 +36,7 @@ git push origin mian --force
 
 输入
 
-```csharp
+```bash
 git  init
 ```
 
@@ -104,7 +104,7 @@ git  clone 'url' 拉去地址
 
 ## git 提交时忽略eslint检查
 
-```
+```bash
 git commit -m "+" --no-verify
 ```
 

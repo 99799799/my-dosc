@@ -2,7 +2,7 @@
 
 @scope 就是原生css 的样式隔离方案。
 
-```
+```css
 @scope (scope root) to (scope limit) {
   rulesets
 }
