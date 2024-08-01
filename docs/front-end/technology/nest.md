@@ -14,7 +14,7 @@ windows
 
 Powershell/CMD 可以打印出这个说明安装成功。（部分系统需要重启后环境变量才生效，如果不会配置环境变量请直接默认安装）
 
-```
+```bash
 解释$node -v
 v16.18.1
 $ npm -v
@@ -31,7 +31,7 @@ Snap
 
 使用 [Nest CLI](https://docs.nestjs.cn/8/cli?id=overview) 建立新项目非常简单。 在安装好 npm 后，您可以使用下面命令在您的 OS 终端中创建 Nest 项目：
 
-```
+```bash
 $ npm i -g @nestjs/cli
 $ nest new project-nameCopy to clipboardErrorCopied
 ```
@@ -40,14 +40,14 @@ $ nest new project-nameCopy to clipboardErrorCopied
 
 将会创建 `project-name` 目录， 安装 node_modules 和一些其他样板文件，并将创建一个 `src` 目录，目录中包含几个核心文件。
 
-```
+
 解释src
  ├── app.controller.spec.ts
  ├── app.controller.ts
  ├── app.module.ts
  ├── app.service.ts
  └── main.tsCopy to clipboardErrorCopied
-```
+
 
 以下是这些核心文件的简要概述：
 
@@ -101,7 +101,7 @@ const app = await NestFactory.create<NestExpressApplication>(AppModule);Copy to 
 
 安装过程完成后，您可以在系统命令行工具中运行以下命令，以启动应用程序：
 
-```
+```bash
 $ npm run startCopy to clipboardErrorCopied
 ```
 
@@ -109,7 +109,7 @@ $ npm run startCopy to clipboardErrorCopied
 
 要监听文件中的更改，您可以运行以下命令来启动应用程序：
 
-```
+```bash
 $ npm run start:devCopy to clipboardErrorCopied
 ```
 
