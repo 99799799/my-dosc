@@ -53,7 +53,7 @@ export default defineConfig({
         {
           text: '随笔',
           items: [
-            { text: 'vite + vue3 + ts 开发过程遇到的问题', link: '/docs/front-end/article/vite + vue3 + ts 开发过程遇到的问题' },
+            { text: 'vite+vue3+ts开发过程遇到的问题', link: '/docs/front-end/article/vite+vue3+ts开发过程遇到的问题' },
             { text: '数组常用方法总结', link: '/docs/front-end/article/数组常用方法总结' },
             { text: '字符串方法总结', link: '/docs/front-end/article/字符串方法总结' },
             { text: '数组去重', link: '/docs/front-end/article/数组去重' },
