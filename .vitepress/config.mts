@@ -40,7 +40,7 @@ export default defineConfig({
         text: '前端', items: [
           { text: 'element-plus', link: '/docs/front-end/technology/element-plus.md' },
           { text: 'typescript', link: '/docs/front-end/technology/typescript.md' },
-          { text: 'nest', link: '/docs/front-end/technology/nest.md' }
+          { text: 'nest', link: '/docs/front-end/technology/nest.md' },
         ]
       },
       { text: '项目', link: 'docs/my-item/article/微蜂私域' },
@@ -60,6 +60,12 @@ export default defineConfig({
             { text: '常用工具函数', link: '/docs/front-end/article/常用工具函数' },
             { text: '常用工具函数2', link: '/docs/front-end/article/常用工具函数2' },
             { text: 'js禁止网页复制', link: '/docs/front-end/article/js如何禁止网页复制' },
+            { text: 'webpack', link: '/docs/front-end/article/webpack' },
+            { text: 'jquery', link: '/docs/front-end/article/jquery' },
+            { text: 'git', link: '/docs/front-end/article/git' },
+            { text: 'html的使用scss', link: '/docs/front-end/article/html的使用scss' },
+            { text: '@scope样式隔离', link: '/docs/front-end/article/@scope样式隔离' },
+            { text: '常用的h5标签', link: '/docs/front-end/article/常用的h5标签' },
           ],
         },
       ],
