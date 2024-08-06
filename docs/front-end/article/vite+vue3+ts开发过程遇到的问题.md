@@ -669,7 +669,7 @@ npm install -g less
 
 1、通过location.search去获取参数字符串，再进行截取转化获取。
 
-以 http://localhost:9090/mobile/login/register?id=2f63398&mark=577962 为例
+以为例
 
 ```js
 let search = window.location.search.slice(1);
@@ -691,7 +691,7 @@ if (params[0].includes('id')) {
 
 2、通过 new URL()
 
-以 http://localhost:9090/mobile/login/register?id=2f63398&mark=577962 为例
+以为例
 
 ```js
 let params = new URL(location.href).searchParams;
@@ -705,7 +705,7 @@ console.log(mark) // 577962
 
 3、通过 new URLSearchParams()
 
-以 http://localhost:9090/mobile/login/register?id=2f63398&mark=577962 为例
+以为例
 
 ```js
 let params = new URLSearchParams(location.search);
