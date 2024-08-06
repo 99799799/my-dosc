@@ -24,11 +24,12 @@
 
 ## git强制覆盖远程分支
 
+```bash
 git push origin 分支名 --force
 
-一般是
+git push origin master --force
+```
 
-git push origin mian --force
 
 现在的默认分支名不再是master
 
@@ -46,16 +47,16 @@ git  init
 
 **添加、提交文件到本地仓库**
 
-1. git add . 或者 git add <filename>
-
+1. git add . 或者 git add 
+```bash
    git commit –m "项目描述"
-
+```
 **将本地文件推送到coding服务器**
-
+```bash
 git remote add origin https:// git.coding.net/用户名/项目名.git
 
 git push origin master -f 强制更新
-
+```
 
 
 ## git push失败。更新被拒绝，因为远程包含您所做的工作。
@@ -81,25 +82,25 @@ git push origin master -f 强制更新
 
 
 **把gitlab拉取项目到本地**
-
+```bash
 git fetch origin master（master为gitlab仓库的分支名）
-
+```
 
 
 拉取远程的master分支，命令：
-
+```bash
 git fetch origin master（master远程仓库名称）
-
+```
 
 
 **把内容都拉取到本地**
-
+```bash
 git pull origin master（master远程仓库名称）
+```
 
-
-
+```bash
 git  clone 'url' 拉去地址
-
+```
 
 
 ## git 提交时忽略eslint检查

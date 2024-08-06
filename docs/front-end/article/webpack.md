@@ -132,10 +132,6 @@ html-webpack-plugin
 
 这个插件还会帮我们添加一个新的srcipt脚本 自动添加内存的路径
 
-![image-20220613141340790](C:\Users\64964\AppData\Roaming\Typora\typora-user-images\image-20220613141340790.png)
-
-
-
 ## devServer
 
 ```js
@@ -202,8 +198,6 @@ npm i style-loader@3.0.0 css-loader@5.2.6 -D
 ```js
 import "../public/css/index.css";
 ```
-
-![c11f36be1249440e8daa2cc351f7541](C:\Users\64964\AppData\Local\Temp\WeChat Files\c11f36be1249440e8daa2cc351f7541.jpg)
 
 从右--》左方向进行
 
@@ -280,7 +274,6 @@ import ES6导入语法的时候
 
 ### 打包处理js文件中的高级语法
 
-### ![ef5250d472ae52e1d03d279ae7b02fd](C:\Users\64964\AppData\Local\Temp\WeChat Files\ef5250d472ae52e1d03d279ae7b02fd.jpg)
 
 ```bash
 npm i babel-loader@8.2.2 @babel/core@7.14.6 @babel/plugin-proposal-decorators@7.14.5 -D
@@ -352,16 +345,9 @@ mode: 'development',
 所以咱们可用直接在build 多指定一个参数
 
 
-
-![image-20220614141343447](C:\Users\64964\AppData\Roaming\Typora\typora-user-images\image-20220614141343447.png)
-
 我们会发现这看起来很不舒服
 
 ### 把 js 文件整理到一起
-
-![image-20220614141430441](C:\Users\64964\AppData\Roaming\Typora\typora-user-images\image-20220614141430441.png)
-
-
 
 ### 把图片文件统一生成到 image 目录中
 

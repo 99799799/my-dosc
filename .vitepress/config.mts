@@ -53,7 +53,7 @@ export default defineConfig({
         {
           text: '随笔',
           items: [
-            { text: 'vite+vue3+ts开发过程遇到的问题', link: '/docs/front-end/article/vite+vue3+ts开发过程遇到的问题' },
+            { text: 'vite+vue3+ts开发问题', link: '/docs/front-end/article/vite+vue3+ts开发过程遇到的问题' },
             { text: '数组常用方法总结', link: '/docs/front-end/article/数组常用方法总结' },
             { text: '字符串方法总结', link: '/docs/front-end/article/字符串方法总结' },
             { text: '数组去重', link: '/docs/front-end/article/数组去重' },
@@ -61,7 +61,7 @@ export default defineConfig({
             { text: '常用工具函数2', link: '/docs/front-end/article/常用工具函数2' },
             { text: 'js禁止网页复制', link: '/docs/front-end/article/js如何禁止网页复制' },
             { text: 'webpack', link: '/docs/front-end/article/webpack' },
-            { text: 'jquery', link: '/docs/front-end/article/jquery' },
+            { text: 'jquery的使用', link: '/docs/front-end/article/jquery的使用' },
             { text: 'git', link: '/docs/front-end/article/git' },
             { text: 'html的使用scss', link: '/docs/front-end/article/html的使用scss' },
             { text: '@scope样式隔离', link: '/docs/front-end/article/@scope样式隔离' },

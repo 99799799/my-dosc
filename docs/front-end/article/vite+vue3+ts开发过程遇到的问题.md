@@ -210,9 +210,6 @@ if (res.success) {
 
 标准模块
 
-![image-20231013095759709](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231013095759709.png)
-
-
 
 今天遇到啥了，命名规范，componet组件路径名一定要把.vue加上去
 
@@ -586,7 +583,6 @@ const handleCustomEvent = (eventData) => {
 
 一般情况重启导致的，node_modules 文件损坏了， 得去查E:\.pnpm-store\v3\files文件是不是损坏，损坏的情况我们就得进行修复，可以试一下使用
 
-![image-20231106101654281](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231106101654281.png)
 
 扫描修复驱动器
 
@@ -1494,11 +1490,6 @@ tsconfig.json里去查看 include
 
 
 时间戳
-
-![image-20240105155256337](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\image-20240105155256337.png)
-
-
-
 
 
 如果遇到切换空白的情况前往
