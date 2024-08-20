@@ -1,5 +1,13 @@
 export const list = [
   {
+    time: '2024-08-06',
+    title: '湄洲岛游玩',
+    desc: '去找铁子玩耍',
+    image: 'https://img2.baidu.com/it/u=3383947878,1321658831&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=666',
+    point: [119.13, 25.06],
+    page: '/my-dosc/docs/travel/湄洲岛游玩'
+  },
+  {
     time: '2024-02-14',
     title: '潮汕游玩',
     desc: '英歌舞，美食吃不停',
