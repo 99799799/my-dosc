@@ -41,6 +41,7 @@ export default defineConfig({
           { text: 'element-plus', link: '/docs/front-end/technology/element-plus.md' },
           { text: 'typescript', link: '/docs/front-end/technology/typescript.md' },
           { text: 'nest', link: '/docs/front-end/technology/nest.md' },
+          { text: '跳一跳', link: '/docs/jump'},
         ]
       },
       { text: '项目', link: 'docs/my-item/article/微蜂私域' },
