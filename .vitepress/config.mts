@@ -67,6 +67,7 @@ export default defineConfig({
             { text: 'html的使用scss', link: '/docs/front-end/article/html的使用scss' },
             { text: '@scope样式隔离', link: '/docs/front-end/article/@scope样式隔离' },
             { text: '常用的h5标签', link: '/docs/front-end/article/常用的h5标签' },
+            { text: '定时任务', link: '/docs/front-end/article/定时任务'}
           ],
         },
       ],
